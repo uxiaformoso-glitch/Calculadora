@@ -9,25 +9,63 @@ section {
 }
 
 .calculator-box {
+    width: 340px;
+    padding: 24px;
     border: 2px solid;
+    border-radius: 24px;
     background-color: blueviolet;
 }
 
-input[type="button"] {
-    width: 100%;
-    padding: 20px 40px;
-    background-color: rgb(225, 215, 225);
-    font-size: larger;
-    border: 1px solid white;
-    border-radius: 15px;
+.display {
+    background-color: #e0d0e0;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
-input[type="text"] {
-    width: 76%;
-    padding: 20px 50px;
-	font-size: 24px;
-	font-weight: bold;
-	border-radius: 5px;
-	border: 1px solid white;
-    background-color: rgb(225, 215, 225);
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
 }
+
+.btn {
+    padding: 15px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: #e0d0e0;
+    border-color: white;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.btn:hover {
+    background-color: #d5afd5;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.control, .equals{
+    background-color: #baa5cf;
+}
+
+.control:hover, .equals:hover {
+    background-color: #b58ddd;
+    color: white;
+}
+
+.operator, .advanced {
+    background-color: #dcbdd2;
+}
+
+.operator:hover, .advanced:hover {
+    background-color: #d2a0c2;
+}
+

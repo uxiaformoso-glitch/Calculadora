@@ -10,54 +10,40 @@
 
     <section>
         <h1>CALCULADORA</h1>
-        <table class="calculator-box" id="calculator">
-            <tr>
-                <td colspan="4"><input type="text" id="result"></td>
-            </tr>
+        <div class="calculator-box">
+            <div class="display" id="display">0</div>
 
-            <tr>
-                <td><input type="button" value="Delete" onclick=""></td>
-                <td></td>
-                <td></td>
-                <td><input type="button" value="C" onclick=""></td>
-            </tr>
+            <div class="buttons">
+                <button class="btn control">C</button>
+                <button class="btn control">Delete</button>
+                <button class="btn advanced">PI</button>
+                <button class="btn operator">/</button>
 
-            <tr>
-                <td><input type="button" value="%"></td>
-                <td><input type="button" value="^" onclick=""></td>
-                <td><input type="button" value="√" onclick=""></td>
-                <td><input type="button" value="PI" onclick=""></td>
-            </tr>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn operator">*</button>
 
-            <tr>
-                <td><input type="button" value="7" onclick=""></td>
-                <td><input type="button" value="8" onclick=""></td>
-                <td><input type="button" value="9" onclick=""></td>
-                <td><input type="button" value="/" onclick=""></td>
-            </tr>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn operator">-</button>
+                
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn operator">+</button>
 
-            <tr>
-                <td><input type="button" value="4" onclick=""></td>
-                <td><input type="button" value="5" onclick=""></td>
-                <td><input type="button" value="6" onclick=""></td>
-                <td><input type="button" value="x" onclick=""></td>
-            </tr>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button class="btn advanced">√</button>
+                <button class="btn advanced">^</button>
 
-            <tr>
-                <td><input type="button" value="1" onclick=""></td>
-                <td><input type="button" value="2" onclick=""></td>
-                <td><input type="button" value="3" onclick=""></td>
-                <td><input type="button" value="-" onclick=""></td>
-            </tr>
-
-            <tr>
-                <td><input type="button" value="0" onclick=""></td>
-                <td><input type="button" value="." onclick=""></td>
-                <td><input type="button" value="=" onclick=""></td>
-                <td><input type="button" value="+" onclick=""></td>
-            </tr>
-        </table>
+                <button class="btn equals">=</button>
+            </div>
+        </div>
     </section>
     
+    <script src="js/basicArithmeticOperations.js"></script>
 </body>
 </html>
